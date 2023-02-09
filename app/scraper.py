@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
-from utils.split_time import split_time, extract_date
+from .split_time import split_time, extract_date
 from datetime import datetime, date, time
-from utils.encoding import encode_to_utf8
-from app.lecture import Lecture
+from .encoding import encode_to_utf8
+from .lecture import Lecture
 
 class Scraper:
     def __init__(self, url: str):

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.scraper import Scraper
+from .scraper import Scraper
 app = FastAPI()
 
 @app.get("/lectures&gid={gid}&uid={uid}")
